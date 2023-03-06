@@ -54,17 +54,6 @@ resource "aws_subnet" "my_subnet" {
   }
 }
 
-resource "aws_subnet" "my_subnet2" {
-  vpc_id            = aws_vpc.my_vpc.id
-  cidr_block        = "192.168.3.0/24"
-  availability_zone  = "us-east-1b"
-  map_public_ip_on_launch = true
-
-  tags = {
-    Name = "subnet2-ec2"
-  }
-}
-
 
 
 
